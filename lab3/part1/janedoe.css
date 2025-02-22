@@ -12,16 +12,19 @@ body {
   h2 {
     font-size: 1.5em;
   }
-  
+  h2 + ul {
+  background-color: #eeeeee;
+  border: 5px solid purple;
+  }
+
   .job-title {
     color: #999999;
     font-weight: bold;
   }
-
-  h2 + ul{
-    background-color: #eeeeee;
-    border: 5px solid purple;
-    padding: 2rem;
+ 
+  a:link,
+  a:visited {
+    color: #fb6542;
   }
   
   a:hover {

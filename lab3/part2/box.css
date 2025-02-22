@@ -1,8 +1,10 @@
 html {
     font-family: sans-serif;
+    color: white;
   }
   
   div {
 width: 200px;
+height: 500px;
 background-color: red;
   }

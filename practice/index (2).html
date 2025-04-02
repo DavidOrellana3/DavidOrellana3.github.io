@@ -98,7 +98,8 @@
       guessField.focus();
 
     }
-function setGameOver(){
+    
+    function setGameOver(){
     guessField.disabled = true;
     guessSubmit.disabled = true;
     resetButton = document.createElement("button");
@@ -106,6 +107,7 @@ function setGameOver(){
     document.body.append(resetButton);
     resetButton.addEventListener("click", resetGame);
 }
+
 
 function gameReset(){
     guessCount = 1;

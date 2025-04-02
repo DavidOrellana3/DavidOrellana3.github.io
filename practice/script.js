@@ -1,4 +1,4 @@
-<script>
+
       function createParagraph() {
         const para = document.createElement("p");
         para.textContent = "you clicked the button!";
@@ -17,4 +17,3 @@
 
 
 
-      </script>

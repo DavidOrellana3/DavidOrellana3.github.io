@@ -98,10 +98,35 @@
       guessField.focus();
 
     }
+function setGameOver(){
+    guessField.disabled = true;
+    guessSubmit.disabled = true;
+    resetButton = document.createElement("button");
+    resetButton.textContent= "start new game";
+    document.body.append(resetButton);
+    resetButton.addEventListener("click", resetGame);
+}
 
+function gameReset(){
+    guessCount = 1;
 
+    const resetParas = document.querySelectorAll(".resultParas p");
+    for (const resetParas of resetParas){
+        resetPara.textContent = "";
 
+}
 
-    </script>
+resetButton.parentNpode.removeChild(resetButton)
+
+guessField.disabled = false;
+guessField.disabled = false;
+guessField.value = "";
+guessField.focus();
+
+lastResult.style.backgroundColor = "white";
+randomNumber = Math.floor(math.random() * 100) + 1;
+
+}
+    </script> 
   </body>
 </html>

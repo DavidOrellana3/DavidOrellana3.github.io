@@ -83,7 +83,7 @@
 
       } else {
         lastResult.textContent = "Wrong";
-        lastResult.stylebackgroundColor = "red";
+        lastResult.style.backgroundColor = "red";
         if (userGuess < randomNumber) {
         lowOrHi.textContent = "last guess was to low";
 
@@ -100,7 +100,7 @@
     }
     
     guessSubmit.addEventListener("click", checkGuess);
-    
+
     function setGameOver(){
     guessField.disabled = true;
     guessSubmit.disabled = true;

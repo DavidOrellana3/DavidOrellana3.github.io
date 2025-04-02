@@ -61,13 +61,13 @@
       let guessCount = 1;
       let resetButton;
 
-      function checkGuess(){
+      function checkGuess() {
         guessSubmit.addEventListener("click", checkGuess);
         const userGuess = Number(guessField.value);
         if (guessCount == 1){
             guesses.textContent = "previous guesses:";
-
       }
+
       guesses.textContent = '${guesses.textContent} ${userGuess}';
 
       if (userGuess === randomNumber){
@@ -77,7 +77,6 @@
         setGameOver();
 
       } else if (guessCount === 10) {
-
         lastResult.textContent = "game Over!";
         lowOrHi.textContent = "";
         setGameOver();
@@ -85,7 +84,7 @@
       } else {
         lastResult.textContent = "Wrong";
         lastResult.stylebackgroundColor = "red";
-        If (userGuess < randomNumber) {
+        if (userGuess < randomNumber) {
         lowOrHi.textContent = "last guess was to low";
 
         }else if (userGuess > randomNumber) {

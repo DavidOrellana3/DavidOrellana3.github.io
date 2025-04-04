@@ -24,9 +24,9 @@ function result() {
     let zItem = randomValueFromArray(insertZ);
     
 
-    newStory = newStory.replace(":insertx:", xItem);
-    newStory = newStory.replace(":inserty:", yItem);
-    newStory = newStory.replace(":insertz:", zItem);
+    newStory = newStory.replace(":insertX:", xItem);
+    newStory = newStory.replace(":insertY:", yItem);
+    newStory = newStory.replace(":insertZ:", zItem);
 
   if(customName.value !== '') {
     const name = customName.value;
@@ -51,7 +51,7 @@ function result() {
 
 
 
-  }
+  
 
   story.textContent = newStory;
   story.style.visibility = 'visible';

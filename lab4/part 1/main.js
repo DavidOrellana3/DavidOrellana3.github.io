@@ -20,14 +20,34 @@ function result() {
   if(customName.value !== '') {
     const name = customName.value;
 
-  }
+    
 
+  }
+  
   if(document.getElementById("uk").checked) {
     const weight = Math.round(300);
     const temperature =  Math.round(94);
 
   }
 
-  story.textContent = ;
+  story.textContent = "";
   story.style.visibility = 'visible';
+  
+  
+  if(customName.value !== '') {
+    const name = customName.value;
+    newStory = newStory.replace("Bob",name);
+
+  }
+
 }
+
+let newStory = storyText;
+let xItem = randomValueFromArray(Arrayx);
+let yItem = randomValueFromArray(Arrayy);
+let zItem = randomValueFromArray;(Arrayz);
+
+
+newStory = newStory.replace(":insertx:", xItem);
+newStory = newStory.replace(":inserty:", yItem);
+newStory = newStory.replace(":insertz:", zItem);

@@ -29,8 +29,8 @@ function result() {
     const temperature =  Math.round(94-30 * 5/9) + 'centigrade';
 
 
-    newStory = newStory.replace('94 fahrenheit', temperature);
-    newStory = newStory.replace('300 pounds', weight);
+    newStory = newStory.replace('94 fahrenheit ', temperature);
+    newStory = newStory.replace('300 pounds ', weight);
 
 
 
@@ -52,9 +52,9 @@ function result() {
 }
 
 let newStory = storyText;
-let xItem = randomValueFromArray(Arrayx);
-let yItem = randomValueFromArray(Arrayy);
-let zItem = randomValueFromArray;(Arrayz);
+let xItem = randomValueFromArray(insertX);
+let yItem = randomValueFromArray(insertY);
+let zItem = randomValueFromArray(insertZ);
 
 
 newStory = newStory.replace(":insertx:", xItem);

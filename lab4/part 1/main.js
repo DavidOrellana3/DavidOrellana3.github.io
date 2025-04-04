@@ -23,7 +23,6 @@ function result() {
     let yItem = randomValueFromArray(insertY);
     let zItem = randomValueFromArray(insertZ);
     
-
     
 
   if(customName.value !== '') {

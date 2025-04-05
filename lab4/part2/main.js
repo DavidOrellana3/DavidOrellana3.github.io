@@ -9,20 +9,20 @@ const overlay = document.querySelector('.overlay');
 
 
 /* Declaring the alternative text for each image file */
+const imageFilenames = ["pic1.jpeg","pic2.jpeg","pic3.jpeg","pic4.jpeg","pic5.jpeg"]
 /* Looping through images */
-
 
 filenames.forEach((filename,index) => {
 const newImage = document.createElement('img');
-newImage.setAttribute('src', `images/${filenames}`);
+newImage.setAttribute('src', `images/${filename}`);
 newImage.setAttribute('alt', `Image ${index + 1}`);
 thumbBar.appendChild(newImage);
 
 newImage.addEventListener('click',function() {
-    displayedImage.setAttribute('src',`images/${filenames}`);
+    displayedImage.setAttribute('src',`images/${filename}`);
     displayedImage.setAttribute('alt', `Image ${index + 1}`);
 
-   });
+});
 
 });
 

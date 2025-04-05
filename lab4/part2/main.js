@@ -17,6 +17,11 @@ const newImage = document.createElement('img');
 newImage.setAttribute('src', `images/${filename}`);
 newImage.setAttribute('alt', `Image ${index + 1}`);
 thumbBar.appendChild(newImage);
+
+newImage.addEventListener('click',function() {
+    displayedImage.setAttribute('src' `image/${filename}`);
+    displayedImage.setAttribute('alt', `Image ${index + 1}`);
+
 });
 
 

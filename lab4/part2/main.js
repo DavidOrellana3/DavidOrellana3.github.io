@@ -14,12 +14,12 @@ const overlay = document.querySelector('.overlay');
 
 filenames.forEach((filename,index) => {
 const newImage = document.createElement('img');
-newImage.setAttribute('src', `images/${filename}`);
+newImage.setAttribute('src', `images/${filenames}`);
 newImage.setAttribute('alt', `Image ${index + 1}`);
 thumbBar.appendChild(newImage);
 
 newImage.addEventListener('click',function() {
-    displayedImage.setAttribute('src',`images/${filename}`);
+    displayedImage.setAttribute('src',`images/${filenames}`);
     displayedImage.setAttribute('alt', `Image ${index + 1}`);
 
    });

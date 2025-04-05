@@ -22,7 +22,7 @@ newImage.addEventListener('click',function() {
     displayedImage.setAttribute('src',`images/${filename}`);
     displayedImage.setAttribute('alt', `Image ${index + 1}`);
 
-});
+    });
 
 });
 

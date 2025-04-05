@@ -14,13 +14,15 @@ const imageFilenames = ["pic1.jpeg","pic2.jpeg","pic3.jpeg","pic4.jpeg","pic5.jp
 
 filenames.forEach((filename,index) => {
 const newImage = document.createElement('img');
-newImage.setAttribute('src', `images/${filenames}`);
+newImage.setAttribute('src', `images/${filename}`);
 newImage.setAttribute('alt', `Image ${index + 1}`);
 thumbBar.appendChild(newImage);
 
 newImage.addEventListener('click',function() {
-    displayedImage.setAttribute('src',`image/${filename}`);
+    displayedImage.setAttribute('src',`images/${filename}`);
     displayedImage.setAttribute('alt', `Image ${index + 1}`);
+
+   });
 
 });
 
@@ -37,6 +39,7 @@ if (btn.getAttribute('class')==='dark') {
     btn.setAttribute('class','dark');
     btn.textContent = 'Darken';
     overlay.style.backgroundColor = 'rgba(0,0,0,0)';
+
 
 }
 

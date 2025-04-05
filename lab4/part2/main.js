@@ -29,7 +29,6 @@ newImage.addEventListener('click',function() {
 /* Wiring up the Darken/Lighten button */
 btn.addEventListener("click",function(){
 if (btn.getAttribute('class')==='dark') {
-
     btn.setAttribute('class','light');
     btn.textContent = 'Lighten';
     overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';

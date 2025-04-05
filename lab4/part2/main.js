@@ -12,7 +12,7 @@ const overlay = document.querySelector('.overlay');
 const imageFilenames = ["pic1.jpeg","pic2.jpeg","pic3.jpeg","pic4.jpeg","pic5.jpeg"]
 /* Looping through images */
 
-filename.forEach((filename,index) => {
+filenames.forEach((filename,index) => {
 const newImage = document.createElement('img');
 newImage.setAttribute('src', `images/${filename}`);
 newImage.setAttribute('alt', `Image ${index + 1}`);
@@ -25,13 +25,13 @@ btn.addEventListener("click",function(){
 if (btn.getAttribute('class')==='dark') {
 
     btn.setAttribute('class','light');
-    btn.textContent = 'lighten';
-    overlay.style.backgroundColor = 'rgb(0 0 0/50%)';
+    btn.textContent = 'Lighten';
+    overlay.style.backgroundColor = 'rgb(0,0,0/50%)';
 
 } else {
     btn.setAttribute('class','dark');
-    btn.textContent = 'darken';
-    overlay.style.backgroundColor = 'rgb(0 0 0/0%)';
+    btn.textContent = 'Darken';
+    overlay.style.backgroundColor = 'rgb(0,0,0/0%)';
 
 }
 

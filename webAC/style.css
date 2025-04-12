@@ -53,7 +53,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: gray;
+  background-color: lightgrey;
 }
 
 article, footer, .secondary {

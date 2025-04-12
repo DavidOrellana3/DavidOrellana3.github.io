@@ -38,7 +38,6 @@ font[size="7"] {
 font[size="6"] {
   font-size: 3rem;
   text-align: center;
-  text-shadow: 2px 2px 10px black;
   color: grey;
 }
 
@@ -59,6 +58,7 @@ div[class="nav"], article, footer, .secondary {
 
 article, footer, .secondary {
   padding: 10px 30px;
+  color:  black;
 }
 
 article {

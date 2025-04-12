@@ -63,6 +63,7 @@ article, footer, .secondary {
 
 article {
   margin-right: 10px;
+  color:black;
 }
 
 div[class="nav"] {

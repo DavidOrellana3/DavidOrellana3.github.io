@@ -38,7 +38,7 @@ font[size="7"] {
 font[size="6"] {
   font-size: 3rem;
   text-align: center;
-  color: grey;
+  color:rgb(200, 214, 238);
 }
 
 font[size="5"] {
@@ -53,7 +53,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: lightgrey;
+  background-color: white;
 }
 
 article, footer, .secondary {
